@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.MainSearchFragment">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RcvSearch"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/imgSearchItem"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="0dp"
+        android:src="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="2"
-        tools:listitem="@layout/item_search"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintDimensionRatio="2:3"
+        tools:src="@color/colorAccent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

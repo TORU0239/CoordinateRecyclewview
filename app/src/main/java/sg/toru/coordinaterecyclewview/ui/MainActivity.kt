@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
         binding.viewPager.adapter = MainPagerAdapter(this)
-
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             tab.text = "POSITION $position"
         }.attach()
